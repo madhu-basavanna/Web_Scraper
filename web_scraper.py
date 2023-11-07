@@ -89,9 +89,6 @@ def main(args):
                 except:
                     print("Is a non clickable element")
 
-
-
-
     # Close the WebDriver
     driver.quit()
 
@@ -103,7 +100,6 @@ if __name__ == "__main__":
     parser.add_argument("target_text", nargs='?', default='donald trump', type=str, help="Target text to search for")
     
     args = parser.parse_args()
-    
     print("Search text:", args.target_text)
     
     main(args=args)
